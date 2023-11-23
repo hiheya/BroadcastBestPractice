@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "work.icu007.broadcastbestpractice"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "work.icu007.broadcastbestpractice"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures{
+        viewBinding = true
     }
 }
 
