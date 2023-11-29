@@ -44,7 +44,7 @@ open class BaseActivity : AppCompatActivity() {
     inner class ForceOfflineReceiver : BroadcastReceiver(){
         
         override fun onReceive(context: Context?, intent: Intent?) {
-            Log.d(TAG, "onReceive: receive broadcast context == null: ${context == null}")
+            Log.d(TAG, "onReceive: receive broadcast context == null? ${context == null}")
             if (context != null) {
                 AlertDialog.Builder(context).apply {
                     setTitle("Warning")
